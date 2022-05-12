@@ -41,5 +41,21 @@ const productDetails = (firstProduct, secondProduct) => [
     },
   },
 ];
+// productDetails('Alcool gel', 'Máscara');
 
+// let a = (productDetails('Alcool gel', 'Máscara')[0].productId);
+// let b = (productDetails('Alcool gel', 'Máscara')[1]);
+// console.log(JSON.stringify(a) === JSON.stringify(b));
+let resultado = [];
+for (let index = 10; index < 13; index += 1) {
+  resultado.push(productDetails('Alcool gel', 'Máscara')[0].details.productId[index]);
+}
+let resultado1 = [];
+for (let index = 7; index < 10; index += 1) {
+  resultado1.push(productDetails('Alcool gel', 'Máscara')[1].details.productId[index]);
+}
+console.log(resultado, resultado1);
+// console.log(productDetails('Alcool gel', 'Máscara')[0].details.productId.length -10);
+
+// console.log(a);
 module.exports = productDetails;
