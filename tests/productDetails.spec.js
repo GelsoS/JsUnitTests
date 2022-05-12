@@ -57,7 +57,7 @@ const resul = JSON.stringify (resultado) === JSON.stringify (resultado1);
     expect(JSON.stringify(productDetails('Alcool gel', 'Máscara')[0])===JSON.stringify(productDetails('Alcool gel', 'Máscara')[1])).toEqual(false);
 
     // Teste se os dois productIds terminam com 123.
-    expect(resul).toBe(true)
+    expect(resul).toBe(true);
 
   });
 });
