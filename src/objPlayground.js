@@ -42,7 +42,7 @@ const calculator = (number1, number2) => {
   }; 
  return resultado;
 };
-calculator(1, 2);
+calculator();
 
 const arrayGenerator = (type, object) => {
   if (type === 'keys') {
@@ -51,7 +51,9 @@ const arrayGenerator = (type, object) => {
   if (type === 'values') {
     return Object.values(object);
   }
-  return Object.entries(object);
+  if (type === 'entries') {
+    return Object.entries(object);    
+  }
 };
 arrayGenerator();
 // console.log(arrayGenerator('entries', { sum: 3, mult: 2, div: 1, sub: 0 }));
