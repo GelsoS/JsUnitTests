@@ -68,5 +68,4 @@ const getCharacter = (name) => {
   return undefined;
 };
 getCharacter();
-// console.log(getCharacter('Arya'));
 module.exports = getCharacter;

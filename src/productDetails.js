@@ -54,8 +54,5 @@ let resultado1 = [];
 for (let index = 7; index < 10; index += 1) {
   resultado1.push(productDetails('Alcool gel', 'Máscara')[1].details.productId[index]);
 }
-console.log(resultado, resultado1);
-// console.log(productDetails('Alcool gel', 'Máscara')[0].details.productId.length -10);
 
-// console.log(a);
 module.exports = productDetails;

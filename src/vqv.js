@@ -25,7 +25,6 @@ const vqv = (nome, idade) => {
 Tenho ${idade} anos,
 trabalho na Trybe e mando muito em programação!
 #VQV!`;
-  console.log(frase);
   return frase;
 };
 vqv();
